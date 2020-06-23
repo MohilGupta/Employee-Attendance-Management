@@ -1,0 +1,123 @@
+#navBarContainer{
+    background-color: black;
+    margin-right:2px;
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.navBar{
+    padding: 25px ;
+    display: flex;
+    flex-direction: column;
+}
+/*.logo img {
+    width:32px;
+} */
+.navBar .group{
+   /* border-top: 1px solid; */
+    padding: 10px 0;
+}
+.navItem{
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    letter-spacing: 1px;
+    position:relative;
+    width:100%;
+   /* border-top: 1px solid white;
+    border-bottom: 1px solid white; */
+}
+
+.navItemImage{
+    color:white;
+}
+.navItemLink{
+    color: white;
+    text-decoration: none;
+    width:100%;
+}
+.navItemLink:hover{
+    color: black;
+}
+.navItem:hover, .navItem:hover .navItemLink, .navItem:hover .navItemImage{
+    background-color: #fff500;
+    color: black;
+    font-weight: bold;
+}
+.navItemLink .icon{
+    position:absolute;
+    right:0;
+    top:6px;
+    width:25px
+}
+#mainContainer{
+    margin-left:220px;
+    float:left;
+    width: calc(100% - 220px);
+   
+}
+
+/*Add employee/admin Button*/
+.btn_action{
+    margin-top: 20px;
+    background-color: black;
+    color: #fff500;
+ }
+.btn_action:hover{
+     background-color: #fff500;
+     color: black;
+     font-weight:bold;
+}
+
+/* Add employee-admin form*/
+form{
+    margin-top:40px;
+}
+.form_row{
+    position:relative;
+
+}
+.form_row input, select{
+    padding-left:40px;
+}
+.form_row .icon{
+    bottom:10px;
+    position: absolute;
+    padding-left:10px;
+}
+
+/*    Add styles here  */
+.profile_div{
+    margin-top:40px;
+}
+.div_row{
+    padding:0 20px;
+    background-color:red;
+    clear:both;
+    background-color:#F4F0F9 !important;
+    margin-top:10px;
+}
+
+.field_value{
+    margin-top:10px;
+    color:black;
+    border-left:1px solid black;
+    float:left;
+    padding:0 10px;
+    background-color:#F4F0F9 ;
+    min-width:65%;
+}
+
+.field_name{
+    margin-top:10px;
+    float:left;
+    background-color:#EEEEEE; 
+    padding:0 10px;
+    min-width:35%;
+}
+
+
