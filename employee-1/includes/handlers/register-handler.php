@@ -20,7 +20,7 @@ if(isset($_POST['registerButton'])){
     $city=$_POST['city'];
     $state=$_POST['state'];
     $password=$_POST['password'];
-    //$password=$_POST['repassword'];
+    
     $token="qwerfdsSDFWEFVRVCrwrefuvbev124t35t5eev0024r248r35ervb9230r24v";
     $token=str_shuffle($token);
     $token=substr($token,0,10);
@@ -41,16 +41,21 @@ if(isset($_POST['registerButton'])){
         $subject="email verfication";
         $mail=new PHPMailer();
         $mail->isSMTP();
-        $mail->Host="smtp.gmail.com";
+
+        $mail->Host="mail.innerworkindia.com";
         $mail->SMTPAuth=true;
-        $mail->Username="beingtherebuisness@gmail.com";    // Please change the email
-        $mail->Password="beingthere#123";                  // Please change the password
-        $mail->Port=465 ; //587
-        $mail->SMTPSecure="ssl";
+
+        $mail->Username="response@innerworkindia.com";   
+        $mail->Password="123@Response";   
+  
+        $mail->Port=587;
+  
+        $mail->SMTPSecure="tls";
     
         // email setings
         $mail->isHTML(true);
-        $mail->setFrom("beingtherebuisness@gmail.com");   // Please change the email here 
+       // $mail->setFrom("beingtherebuisness@gmail.com");   // Please change the email here 
+       $mail->setFrom("response@innerworkindia.com"); 
         $mail->addAddress($email);
         $mail->Subject=$subject;
         $mail->Body=  "
